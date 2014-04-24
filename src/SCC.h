@@ -2,13 +2,16 @@
 #define SCC_h
 
 #include "Graph.h"
+#include <queue>
 
 class SCC {
 public:
 	SCC(char*);
 
+	void run_algorithm(int);
 	void depth_first_search(int);
 	void display_dfs();
+
 private:
 	
 	Graph graph;
@@ -18,6 +21,7 @@ private:
 	bool* visited;
 
 	int current_value;
+
 };
 
 #endif
